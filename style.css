@@ -9,14 +9,12 @@
 }
 
 .titulo {
-    
-    margin: 10px 0 13px 0;
+    margin: 0px 0 13px 0;
     font-size: 80px;
-    font
 }
 
 body {
-    margin: 0;
+    margin: 0px;
 }
 
 a {
@@ -25,12 +23,20 @@ a {
 }
 
 nav {
-    text-align:center;
+    text-align: center;
     font-size: 20px;
     text-decoration: none; 
     color: black;
     font-family: "Inter", sans-serif;
     font-weight: 400;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #fefcff;
+    padding: 10 0 10 0;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;    
 }
 
 .imagem-main {
