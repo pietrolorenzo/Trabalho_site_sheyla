@@ -1,65 +1,595 @@
-html
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Footer no Final da Página</title>
-    <link rel="stylesheet" href="7styles.css">
+    <title>Lu Phellipo</title>
+    <link rel="stylesheet" href="6styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Judson:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-<footer>
-    <div class="footer-bar">
-        <p>Por Luciana Phellipo - Artista Plástica</p>
-    </div>
-    <div class="footer-background">
-        <div class="social-media">
-            <a href="#"><img src="Vector.png" alt="Instagram"></a>
-            <a href="https://wa.me/seu-numero-whatsapp"><img src="Group 2.png" alt="WhatsApp"></a>
+    <header>
+        <h1>Lu Phellipo</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contate-nos</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Sobre nós</a></li>
+                <li><a href="#">Ajuda</a></li>
+            </ul>
+        </nav>
+        <div class="banner">
+            <img src="Mandala em pontilhismo.png" alt="Banner">
+            <div class="texto-banner">
+                Sobre nós
+            </div>
         </div>
-    </div>
-</footer>
+    </header>
 
+    <section class="sobre">
+        <img src="foto de perfil.png" alt="Luciana Phellipo segurando uma mandala">
+        <div class="sobre-texto">
+            <h3>Quem sou eu?</h3>
+            <p>Eu sou Luciana Phellipo e sou a artista responsável pela página Luphellipo. Desde a infância, sempre senti uma forte conexão com as artes manuais, experimentando pinturas em várias superfícies e explorando diferentes técnicas. No entanto, foi nas mandalas que descobri minha verdadeira paixão. Por meio delas, descobri uma forte ligação com a geometria e simetria, resultando em designs que não apenas decoram, mas também despertam inspiração e promovem reflexão.</p>
+            <p>Eu acredito que as mandalas vão além de meros enfeites para paredes ou espaços, elas possuem um propósito sagrado e significativo. Cada produção é uma viagem meditativa, um procedimento que acalma a mente, estimula a intuição e nos leva a estar totalmente presentes. Quando nos deparamos com uma mandala, somos encorajados a contemplar como os desenhos se desenvolvem, criando assim uma experiência tranquilizadora e reflexiva.</p>
+            <p>Todas as peças que eu produzo são únicas, confeccionadas com muito amor e precisão na região litorânea da Bahia. Através dos mandalas, consigo equilibrar tanto a minha atenção total quanto a criatividade, resultando em obras que transmitem uma sensação de paz e o aumento da consciência. Completar cada mandala é uma sensação indescritível, pois é como se tivesse capturado um pedaço de harmonia e beleza.</p>
+            <p>Minha maneira de expressar amor e propósito é por meio da criação de mandalas. Ao compartilhar meu trabalho, desejo transmitir paz e inspiração para suas vidas.</p>
+        </div>
+    </section>
+
+    <section class="valores">
+        <div class="valor-item">
+            <img src="imagem1.png" alt="Visão">
+            <h4>Visão</h4>
+        </div>
+        <div class="valor-item">
+            <img src="imagem 2.png" alt="Missão">
+            <h4>Missão</h4>
+        </div>
+        <div class="valor-item">
+            <img src="imagem 3.png" alt="Valores">
+            <h4>Valores</h4>
+        </div>
+    </section>
+
+    <div class="social_media">
+        <a href="#" title="Instagram">
+            <div class="balloon">
+                <span class="name">Instagram</span>
+            </div>
+            <svg viewBox="0 0 512 512">
+                <path d="m256.06 124.76c-72.645 0-131.24 58.596-131.24 131.24 0 72.645 58.596 131.24 131.24 131.24 72.645 0 131.24-58.596 131.24-131.24 0-72.645-58.596-131.24-131.24-131.24zm0 216.56c-46.945 0-85.324-38.264-85.324-85.324s38.264-85.324 85.324-85.324 85.324 38.264 85.324 85.324-38.379 85.324-85.324 85.324zm167.22-221.93c0 17.019-13.707 30.611-30.611 30.611-17.019 0-30.611-13.707-30.611-30.611s13.707-30.611 30.611-30.611 30.611 13.707 30.611 30.611zm86.923 31.068c-1.9418-41.006-11.308-77.328-41.348-107.25-29.926-29.926-66.249-39.292-107.25-41.348-42.262-2.3987-168.93-2.3987-211.2 0-40.891 1.9418-77.214 11.308-107.25 41.234-30.04 29.926-39.292 66.249-41.348 107.25-2.3987 42.262-2.3987 168.93 0 211.2 1.9418 41.006 11.308 77.328 41.348 107.25 30.04 29.926 66.249 39.292 107.25 41.348 42.262 2.3987 168.93 2.3987 211.2 0 41.006-1.9418 77.328-11.308 107.25-41.348 29.926-29.926 39.292-66.249 41.348-107.25 2.3987-42.262 2.3987-168.82 0-211.08zm-54.598 256.43c-8.9093 22.388-26.157 39.635-48.659 48.659-33.695 13.364-113.65 10.28-150.89 10.28s-117.31 2.9698-150.89-10.28c-22.388-8.9093-39.635-26.157-48.659-48.659-13.364-33.695-10.28-113.65-10.28-150.89s-2.9698-117.31 10.28-150.89c8.9093-22.388 26.157-39.635 48.659-48.659 33.695-13.364 113.65-10.28 150.89-10.28s117.31-2.9698 150.89 10.28c22.388 8.9093 39.635 26.157 48.659 48.659 13.364 33.695 10.28 113.65 10.28 150.89s3.084 117.31-10.28 150.89z" />
+            </svg>
+        </a>
+    </div>
+
+    <footer>
+        <div class="footer-bar">
+            <p>Por Luciana Phellipo - Artista Plástica</p>
+        </div>
+        <div class="footer-background">
+            <div class="social-media">
+                <a href="https://api.whatsapp.com/resolve/?deeplink=%2Fseu-numero-whatsapp&not_found=1"><img src="WhatsApp.png" alt="WhatsApp"></a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
 
 
-
 css
-body {
-    margin: 0;
-    padding: 0;
-}
 
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: #fff;
-    text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Judson:wght@400;700&family=Inter:wght@400;700&display=swap'); 
 
-.footer-bar {
-    background-color: #9867B899;
-    color: #010B13;
-    padding: 10px 0;
-}
+ 
 
-.footer-background {
-    background-color: #EFD8FE;
-    padding: 20px 0;
-}
+body { 
 
-.social-media {
-    margin-top: 10px;
-}
+    font-family: 'Inter', sans-serif; 
 
-.social-media a {
-    margin: 0 10px;
-}
+    margin: 0; 
 
-.social-media img {
-    width: 30px;
-    height: auto;
-}
+    padding: 0; 
+
+    box-sizing: border-box; 
+
+    background-color: #f5f5f5; 
+
+    display: flex; 
+
+    flex-direction: column; 
+
+    min-height: 100vh; 
+
+} 
+
+ 
+
+header { 
+
+    background-color: #fff; 
+
+    padding: 10px 0; 
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+
+    text-align: center; 
+
+} 
+
+ 
+
+header h1 { 
+
+    margin: 0; 
+
+    font-family: 'Judson', serif; 
+
+} 
+
+ 
+
+nav ul { 
+
+    list-style: none; 
+
+    padding: 0; 
+
+    margin: 0; 
+
+    display: flex; 
+
+    justify-content: center; 
+
+} 
+
+ 
+
+nav li { 
+
+    margin: 0 15px; 
+
+} 
+
+ 
+
+nav a { 
+
+    text-decoration: none; 
+
+    color: #000000; 
+
+    font-weight: bold; 
+
+    transition: color 0.3s ease; 
+
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+
+} 
+
+ 
+
+nav a:hover { 
+
+    color: #ff69b4; 
+
+} 
+
+ 
+
+.banner { 
+
+    position: relative; 
+
+    width: 100%; 
+
+    height: auto; 
+
+} 
+
+ 
+
+.banner img { 
+
+    width: 100%; 
+
+    height: auto; 
+
+    min-height: 47px; 
+
+} 
+
+ 
+
+.texto-banner { 
+
+    position: absolute; 
+
+    top: 40%; 
+
+    left: 50%; 
+
+    transform: translate(-50%, -50%); 
+
+    color: whitesmoke; 
+
+    padding: 20px; 
+
+    box-sizing: border-box; 
+
+    text-align: center; 
+
+    width: 100%; 
+
+    font-size: 19px; 
+
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+
+} 
+
+ 
+
+.sobre { 
+
+    display: flex; 
+
+    justify-content: center; 
+
+    align-items: flex-start; 
+
+    gap: 40px; 
+
+    padding: 20px; 
+
+} 
+
+ 
+
+.sobre img { 
+
+    max-width: 400px; 
+
+    border-radius: 10px; 
+
+} 
+
+ 
+
+.sobre-texto { 
+
+    max-width: 600px; 
+
+} 
+
+ 
+
+@media (max-width: 768px) { 
+
+    .sobre { 
+
+        flex-direction: column; 
+
+        align-items: center; 
+
+        gap: 20px; 
+
+    } 
+
+} 
+
+ 
+
+*, 
+
+*::before, 
+
+*::after { 
+
+    padding: 0; 
+
+    margin: 0; 
+
+    box-sizing: border-box; 
+
+} 
+
+ 
+
+body { 
+
+    background-color: #FFFFFF; 
+
+    font-family: sans-serif; 
+
+} 
+
+ 
+
+.social_media { 
+
+    display: flex; 
+
+    justify-content: center; 
+
+    align-items: center; 
+
+    width: 100%; 
+
+    height: auto; 
+
+    margin-bottom: 20px; /* Adicione uma margem inferior se necessário */ 
+
+} 
+
+ 
+
+.social_media a { 
+
+    position: relative; 
+
+    display: flex; 
+
+    justify-content: center; 
+
+    align-items: center; 
+
+    background-color: #EFD8FE; 
+
+    width: 25px; 
+
+    height: 25px; 
+
+    border-radius: 50%; 
+
+    fill: #000000; 
+
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); 
+
+    text-shadow: 0 3px 5px rgba(0, 0, 0, .3); 
+
+} 
+
+ 
+
+.social_media a:hover .balloon { 
+
+    top: -75px; 
+
+    opacity: 1; 
+
+} 
+
+ 
+
+.social_media svg { 
+
+    height: 16px; 
+
+    filter: drop-shadow(0 5px 10px rgba(0, 0, 0, .2)); 
+
+} 
+
+ 
+
+.social_media .balloon { 
+
+    position: absolute; 
+
+    top: -50px; 
+
+    width: 200px; 
+
+    height: 50px; 
+
+    opacity: 0; 
+
+    border-radius: 30px; 
+
+    transition: top .2s ease-in-out, opacity .2s ease-in-out; 
+
+    filter: drop-shadow(0 5px 10px rgba(0, 0, 0, .2)); 
+
+} 
+
+ 
+
+.social_media .name { 
+
+    position: relative; 
+
+    border-radius: 30px; 
+
+    width: 100%; 
+
+    height: 100%; 
+
+    display: flex; 
+
+    justify-content: center; 
+
+    align-items: center; 
+
+    background-color: #EFD8FE; 
+
+    color: #000000; 
+
+    font-size: 20px; 
+
+    font-weight: bold; 
+
+} 
+
+ 
+
+.social_media .name::before { 
+
+    content: ""; 
+
+    position: absolute; 
+
+    display: block; 
+
+    width: 25px; 
+
+    height: 25px; 
+
+    background-color: #EFD8FE; 
+
+    transform: rotate(45deg); 
+
+    bottom: -10px; 
+
+    border-radius: 4px; 
+
+    z-index: -1; 
+
+} 
+
+ 
+
+footer { 
+
+    background-color: #fff; 
+
+    text-align: center; 
+
+    margin-top: auto; 
+
+} 
+
+ 
+
+.footer-bar { 
+
+    background-color: #9867B899; 
+
+    color: #010B13; 
+
+    padding: 5px 0; 
+
+    margin: 0; 
+
+} 
+
+ 
+
+.footer-background { 
+
+    background-color: #EFD8FE; 
+
+    padding: 27px 0; 
+
+    margin: 0; 
+
+    position: relative; 
+
+} 
+
+ 
+
+.social-media { 
+
+    position: absolute; 
+
+    right: 10px; 
+
+    top: 50%; 
+
+    transform: translateY(-50%); 
+
+} 
+
+ 
+
+.social-media a { 
+
+    margin: 0; 
+
+} 
+
+ 
+
+.social-media img { 
+
+    width: 30px; 
+
+    height: auto; 
+
+} 
+
+ 
+
+.valores { 
+
+    background: #f3f3f3; 
+
+    padding: 20px; 
+
+    display: flex; 
+
+    justify-content: center; 
+
+    gap: 20px; 
+
+    margin-top: 40px; 
+
+} 
+
+ 
+
+.valor-item { 
+
+    text-align: center; 
+
+    max-width: 200px; 
+
+} 
+
+ 
+
+.valor-item img { 
+
+    width: 100%; 
+
+    border-radius: 50%; 
+
+} 
+
+ 
+
+.valor-item h4 { 
+
+    color: #333; 
+
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+
+} 
+
+ 
+
+@media (max-width: 768px) { 
+
+    .valores { 
+
+        flex-direction: column; 
+
+        align-items: center; 
+
+    } 
+
+ 
+
+    .valor-item { 
+
+        max-width: 80%; 
+
+        margin-bottom: 20px; 
+
+    } 
+
+} 
+
+ 
