@@ -18,7 +18,7 @@
 
 .navBar{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -54,8 +54,8 @@ body {
 }
 .card{
 
-    width: 200px;
-    height: 320px;
+    width: 360px;
+    height: 530px;
     border-radius: 30px;
     background: #EFD8FE;
     margin-left: 10px;
@@ -64,7 +64,7 @@ body {
 }
 
 .card-img{
-    width: 200px;
+    width: 360px;
     border-radius: 30px 30px 30px 30px;
     padding-top: 0px;
     transition: all 250ms;
@@ -86,11 +86,11 @@ button{
     border-radius: 15px;
     z-index: 0;
     position: relative;
-    font-size: 17px;
+    font-size: 23px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 28px;
+    margin-left: 90px;
     transition: all 250ms;
 }
 
