@@ -320,7 +320,7 @@ body {
 
     height: auto; 
 
-    margin-bottom: 20px; /* Adicione uma margem inferior se necessário */ 
+    margin-bottom: 20px;
 
 } 
 
