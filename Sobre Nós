@@ -21,7 +21,7 @@ HTML
                 <li><a href="quem_somos.html">Sobre nós</a></li>
                 <li><a href="ajuda.html">Ajuda</a></li>
             </ul>
-        </nav>
+Pagina sobre nós concluída        </nav>
         <div class="banner">
             <img src="Mandala em pontilhismo.png" alt="Banner">
             <div class="texto-banner">Sobre nós</div>
