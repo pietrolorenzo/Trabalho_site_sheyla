@@ -1,29 +1,27 @@
-html
+HTML DO FOOTER ATUALIZADO
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Footer no Final da Página</title>
-    <link rel="stylesheet" href="7styles.css">
+    <link rel="stylesheet" href="5styles.css">
 </head>
 <body>
-
 <footer>
     <div class="footer-bar">
         <p>Por Luciana Phellipo - Artista Plástica</p>
     </div>
     <div class="footer-background">
         <div class="social-media">
-            <a href="#"><img src="Vector.png" alt="Instagram"></a>
-            <a href="https://wa.me/seu-numero-whatsapp"><img src="Group 2.png" alt="WhatsApp"></a>
+            <a href="Group 2 1.png">
+                <img src="WhatsApp.png" alt="WhatsApp"></a>
         </div>
     </div>
 </footer>
-
 </body>
 </html>
-css
+CSS DO FOOTER
 body {
     margin: 0;
     padding: 0;
@@ -40,20 +38,26 @@ footer {
 .footer-bar {
     background-color: #9867B899;
     color: #010B13;
-    padding: 10px 0;
+    padding: 5px 0; 
+    margin: 0;
 }
 
 .footer-background {
     background-color: #EFD8FE;
-    padding: 20px 0;
+    padding: 27px 0; 
+    margin: 0;
+    position: relative;
 }
 
 .social-media {
-    margin-top: 10px;
+    position: absolute;
+    right: 10px; 
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .social-media a {
-    margin: 0 10px;
+    margin: 0;
 }
 
 .social-media img {
