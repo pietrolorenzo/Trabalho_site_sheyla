@@ -98,7 +98,7 @@
     <script>
         document.querySelectorAll('.redirecionar').forEach(function(element)  {
             element.addEventListener('click', function(event){
-        event.preventDefault(); // Impede o redirecionamento padrão
+        event.preventDefault();
         const href = this.href;
         
         Swal.fire({
@@ -115,7 +115,7 @@
             cancelButtonColor: "#d33",
         }).then((result) => {
             if (result.isConfirmed) {
-                window.location.href = href; // Redireciona para o link se confirmado
+                window.location.href = href;
             }
             });
         });
