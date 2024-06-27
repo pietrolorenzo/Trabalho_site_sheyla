@@ -3,7 +3,10 @@
 #opcoes{
     text-decoration: none;
 }
-
+a{
+    text-decoration: none;
+    color: black;
+}
 .mainTitle{
     font-family: Judson;
     text-align: center;

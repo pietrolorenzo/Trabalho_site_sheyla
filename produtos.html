@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produtos</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.0/dist/sweetalert2.min.css">
+    <style>
+        .swal2-popup {
+            font-family: 'Inter', sans-serif;
+
+        }
+        .swal2-confirm, .swall2-cancel {
+            color: black !important;
+        }
+    </style>
 </head>
 <body>
     <header class="mainTitle">
@@ -23,48 +33,49 @@
         <article>
             <figure class="card">
                 <img class="card-img" src="img/amarela_azul.png" alt="mandala amarela e azul">
-                <button class="text-card" onclick="(window.location='https://www.instagram.com/p/Ca250VmprqD/')">Saiba Mais</button>
+                <button class="text-card"><a class="redirecionar" href='https://www.instagram.com/p/Ca250VmprqD/'>Saiba Mais</a></button>
             </figure>
             <figure class="card">
                 <img class="card-img" src="img/beija_flor.png" alt="mandala beija-flor">
-                <button class="text-card" onclick="(window.location='https://www.instagram.com/p/CGX1HBKFJSJ/')">Saiba Mais</button>
+                <button class="text-card"><a class="redirecionar" href="https://www.instagram.com/p/CGX1HBKFJSJ/">Saiba Mais</a></button>
             </figure>
             <figure class="card">
                 <img class="card-img" src="img/dourada_azul.png" alt="mandala dourada e azul">
-                <button class="text-card" onclick="(window.location='https://www.instagram.com/p/Cazt_noFSMe/')">Saiba Mais</button>
+                <button class="text-card"><a class="redirecionar" href="https://www.instagram.com/p/Cazt_noFSMe/">Saiba Mais</a></button>
             </figure>
             <figure class="card">
                 <img class="card-img" src="img/duas_juntas.png" alt="mandala dourada e azul">
-                <button class="text-card" onclick="(window.location='https://www.instagram.com/p/Ca2KdyglAEW/')">Saiba Mais</button>
+                <button class="text-card"><a class="redirecionar" href="https://www.instagram.com/p/Ca2KdyglAEW/">Saiba Mais</a></button>
             </figure>
             <figure class="card">
                 <img class="card-img" src="img/espelho.jpg" alt="mandala dourada e azul">
-                <button class="text-card" onclick="(window.location='https://www.instagram.com/p/Cb77eKAr0fu/?img_index=1')">Saiba Mais</button>
+                <button class="text-card"><a class="redirecionar" href="https://www.instagram.com/p/Cb77eKAr0fu/?img_index=1">Saiba Mais</a></button>
             </figure>
             <figure class="card">
                 <img class="card-img" src="img/mandala dourada e azul, com espelho no meio.png" alt="mandala dourada e azul">
-                <button class="text-card" onclick="(window.location='https://www.instagram.com/p/CoTMZPmLFUu/')">Saiba Mais</button>
+                <button class="text-card"><a class="redirecionar" href="https://www.instagram.com/p/CoTMZPmLFUu/">Saiba Mais</a></button>
             </figure>
             <figure class="card">
                 <img class="card-img" src="img/mandala roxa e verde.png" alt="mandala dourada e azul">
-                <button class="text-card" onclick="(window.location='https://www.instagram.com/p/Cgc0MAwJBLn/')">Saiba Mais</button>
+                <button class="text-card"><a class="redirecionar" href="https://www.instagram.com/p/Cgc0MAwJBLn/">Saiba Mais</a></button>
             </figure>
             <figure class="card">
                 <img class="card-img" src="img/roxa_verde_espiral.png" alt="mandala dourada e azul">
-                <button class="text-card" onclick="(window.location='https://www.instagram.com/p/Cb_FHG6pl9-/')">Saiba Mais</button>
+                <button class="text-card"><a class="redirecionar" href="https://www.instagram.com/p/Cb_FHG6pl9-/">Saiba Mais</a></button>
             </figure>
             <figure class="card">
                 <img class="card-img" src="img/verde_arvore.png" alt="mandala dourada e azul">
-                <button class="text-card" onclick="(window.location='https://www.instagram.com/p/CfCPmlrFPj7/')">Saiba Mais</button>
+                <button class="text-card"><a class="redirecionar" href="https://www.instagram.com/p/CfCPmlrFPj7/">Saiba Mais</a></button>
             </figure>
             <figure class="card">
                 <img class="card-img" src="img/ying e yang.png" alt="mandala dourada e azul">
-                <button class="text-card" onclick="(window.location='https://www.instagram.com/p/Cfot2csrL-4/')">Saiba Mais</button>
+                <button class="text-card"><a class="redirecionar" href="https://www.instagram.com/p/Cfot2csrL-4/">Saiba Mais</a></button>
             </figure>
             <figure class="card">
                 <img class="card-img" src="img/ying e yang 2.png" alt="mandala dourada e azul">
-                <button class="text-card" onclick="(window.location='https://www.instagram.com/p/CfotmsKr42C/')">Saiba Mais</button>
+                <button class="text-card"><a class="redirecionar" href="https://www.instagram.com/p/CfotmsKr42C/">Saiba Mais</a></button>
             </figure>
+            
         </article>
     </main>
 <br>
@@ -82,5 +93,33 @@
         <div class="footer">
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.0/dist/sweetalert2.all.min.js"></script>
+    <script>
+        document.querySelectorAll('.redirecionar').forEach(function(element)  {
+            element.addEventListener('click', function(event){
+        event.preventDefault(); // Impede o redirecionamento padrão
+        const href = this.href;
+        
+        Swal.fire({
+            title: 'Você deseja ser redirecionado para o link?',
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonText: 'Sim',
+            cancelButtonText: 'Não',
+            confirmButtonColor: "#EFD8FE",
+            customClass: {
+                    confirmButton: 'swal2-confirm',
+                    cancelButton: 'swal2-cancel'
+                },
+            cancelButtonColor: "#d33",
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = href; // Redireciona para o link se confirmado
+            }
+            });
+        });
+    });
+    </script>
 </body>
 </html>
