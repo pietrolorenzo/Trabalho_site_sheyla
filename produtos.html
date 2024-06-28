@@ -9,11 +9,7 @@
     <style>
         .swal2-popup {
             font-family: 'Inter', sans-serif;
-
-        }
-        .swal2-confirm, .swall2-cancel {
-            color: black !important;
-        }
+}
     </style>
 </head>
 <body>
@@ -102,16 +98,12 @@
         const href = this.href;
         
         Swal.fire({
-            title: 'Você deseja ser redirecionado para o link?',
+            title: 'Você deseja ser redirecionado para a página?',
             icon: 'warning',
             showCancelButton: true,
             confirmButtonText: 'Sim',
             cancelButtonText: 'Não',
-            confirmButtonColor: "#EFD8FE",
-            customClass: {
-                    confirmButton: 'swal2-confirm',
-                    cancelButton: 'swal2-cancel'
-                },
+            confirmButtonColor: "#008000",
             cancelButtonColor: "#d33",
         }).then((result) => {
             if (result.isConfirmed) {
