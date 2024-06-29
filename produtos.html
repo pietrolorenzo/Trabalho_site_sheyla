@@ -14,6 +14,61 @@
         .swal2-confirm, .swall2-cancel {
             color: black !important;
         }
+
+.grind-produtos {
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 73px 0 73px 0;
+}
+
+.card {
+    width: 409px;
+    height: 499px;
+    border-radius: 50px;
+    background: #EFD8FE;
+    display: inline-block;
+    justify-self: center;
+}
+
+.card-img {
+    
+    width: 409px;
+    height: 419px;
+    border-radius: 50px;
+    padding-top: 0px;
+    transition: all 250ms;
+}
+
+.card-img:hover {
+    transform: scale(1.04);
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0px 0px 20px rgba(225, 145, 243, 0.772);
+}
+
+button {
+    font-family: Inter;
+    font-weight: bold;
+    background-color: #fefcff;
+    padding: 14px 24px;
+    border: unset;
+    border-radius: 50px;
+    z-index: 0;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 14px 0 0 33px;
+    transition: all 250ms;
+}
+
+
+button:hover {
+    background-color: #d7a9f5;
+    cursor: pointer;
+    transform: scale(1.1)
+}
     </style>
 </head>
 <body>
@@ -30,7 +85,12 @@
     </nav>
 
     <main>
-        <article>
+        <div class="contatenos-img-container">
+            <img src="/img/SL.jpg" alt="foto-mandala" >
+            <div class="text-overlay">Produtos</div>
+        </div>
+        <article class="grind-produtos">
+            <div>
             <figure class="card">
                 <img class="card-img" src="img/amarela_azul.png" alt="mandala amarela e azul">
                 <button class="text-card"><a class="redirecionar" href='https://www.instagram.com/p/Ca250VmprqD/'>Saiba Mais</a></button>
@@ -43,6 +103,9 @@
                 <img class="card-img" src="img/dourada_azul.png" alt="mandala dourada e azul">
                 <button class="text-card"><a class="redirecionar" href="https://www.instagram.com/p/Cazt_noFSMe/">Saiba Mais</a></button>
             </figure>
+            </div>
+
+            <div>
             <figure class="card">
                 <img class="card-img" src="img/duas_juntas.png" alt="mandala dourada e azul">
                 <button class="text-card"><a class="redirecionar" href="https://www.instagram.com/p/Ca2KdyglAEW/">Saiba Mais</a></button>
@@ -55,6 +118,9 @@
                 <img class="card-img" src="img/mandala dourada e azul, com espelho no meio.png" alt="mandala dourada e azul">
                 <button class="text-card"><a class="redirecionar" href="https://www.instagram.com/p/CoTMZPmLFUu/">Saiba Mais</a></button>
             </figure>
+            </div>
+
+            <div>
             <figure class="card">
                 <img class="card-img" src="img/mandala roxa e verde.png" alt="mandala dourada e azul">
                 <button class="text-card"><a class="redirecionar" href="https://www.instagram.com/p/Cgc0MAwJBLn/">Saiba Mais</a></button>
@@ -67,17 +133,14 @@
                 <img class="card-img" src="img/verde_arvore.png" alt="mandala dourada e azul">
                 <button class="text-card"><a class="redirecionar" href="https://www.instagram.com/p/CfCPmlrFPj7/">Saiba Mais</a></button>
             </figure>
-            <figure class="card">
-                <img class="card-img" src="img/ying e yang.png" alt="mandala dourada e azul">
-                <button class="text-card"><a class="redirecionar" href="https://www.instagram.com/p/Cfot2csrL-4/">Saiba Mais</a></button>
-            </figure>
-            <figure class="card">
-                <img class="card-img" src="img/ying e yang 2.png" alt="mandala dourada e azul">
-                <button class="text-card"><a class="redirecionar" href="https://www.instagram.com/p/CfotmsKr42C/">Saiba Mais</a></button>
-            </figure>
-            
+            </div>
         </article>
+        <div>
+            <h5>quer ver mais mandalas?</h5>
+            <button>Abrir</button>
+        </div>
     </main>
+
 <br>
     <footer>
         <div class="instagram">

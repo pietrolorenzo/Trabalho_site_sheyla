@@ -71,7 +71,7 @@ body {
     margin: 0;
 }
 
-article {
+.flex-home {
     display: flex;
     gap: 17px;
     justify-content: center;
@@ -165,6 +165,8 @@ button:hover {
 }
 
 .sobre {
+    display: flex;
+    gap: 56px;
     padding: 60px 50px 60px 135px;
     overflow: hidden;
     background-color: #F8F7F7;
@@ -177,23 +179,23 @@ button:hover {
     box-sizing: border-box;
 }
 
+.titulo-quem-sou-eu {
+    font-family: "Judson", serif;
+    font-size: 4vw;
+    margin: 0;
+}
+
+.texto-quem-sou-eu {
+    font-family: "Inter", sans-serif;
+}
+
 .img-sobre {
-    width: 350px;
+    width: 493px;
+    height: 693px;
     border-radius: 20px;
     text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.826);
 }
 
-.sobre-texto>h2 {
-    font-family: "Judson", serif;
-    font-weight: 1000;
-    font-style: bold;
-    font-size: 40px;
-}
-
-.sobre-texto>p {
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-}
 
 .instagram {
     background-color: #d7a9f5;
@@ -264,6 +266,7 @@ footer {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    filter: blur(5px);
 }
 
 .text-overlay {
@@ -272,7 +275,8 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 20px; /* Ajuste conforme necessário */
-    font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra ao texto para melhor visibilidade */
+    font-size: 48px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
