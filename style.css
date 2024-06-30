@@ -6,6 +6,7 @@
     text-decoration: none;
 }
 
+
 a {
     text-decoration: none;
     color: black;
@@ -50,14 +51,11 @@ a {
 }
 
 body {
-    width: 100%;
-    margin: 0;
+    margin: 0px;
+    box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-main {
-    width: 100%;
-    margin: 0;
-}
 
 .img {
     width: 100%;
@@ -93,7 +91,7 @@ main {
 }
 
 .card-img {
-    width: 309px;
+    width: 100%;
     height: 319px;
     border-radius: 50px;
     padding-top: 0px;
