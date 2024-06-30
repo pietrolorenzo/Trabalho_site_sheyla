@@ -355,7 +355,14 @@ footer {
     color: #333; 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);  
 } 
-
+.ajuda{
+    font-family: Inter;
+    font-size: 20px;
+    margin-left: 5px;
+}
+.box-ajuda{
+    text-align: center;
+}
 @media (max-width: 768px) {  
     .valores {  
     flex-direction: column;  
