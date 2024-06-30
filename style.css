@@ -176,24 +176,23 @@ body {
     }
     
     .sobre {
-        display: block;
-        justify-content: center;
-        text-align: center;
-        gap: 56px;
-        padding: 60px 50px;
-        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        row-gap: 200px;
+        padding: 100px;
         background-color: #F8F7F7;
-        flex-wrap: wrap;
     }
     
-    .sobre-texto {
-        font-size: 24px;
+    .sobre-texto{
+        margin-right:  5%;
     }
-    sobre-texto > p {
+
+    .sobre-texto > p {
         font-family: Inter;
     }
     .sobre-texto > h3 {
         font-family: Judson;
+        font-size: 24px;
     }
     .titulo-quem-sou-eu {
         font-family: "Judson", serif;
@@ -207,6 +206,7 @@ body {
     
     .img-sobre {
         width: 100%;
+        width: 980px;
         max-width: 531px;
         height: auto;
         border-radius: 50px;
@@ -235,7 +235,7 @@ body {
         left: 10px;
         background-color: #25d366;
         color: #FFF;
-        border-radius: 5px;
+        border-radius: 15px;
         display: flex;
         justify-content: center;
         font-size: 30px;
@@ -247,7 +247,7 @@ body {
     }
     
     .whatsapp:hover {
-        background-color: #d7a9f5;
+        background-color: #1ba04b;
         cursor: pointer;
         transform: scale(1.1);
         transition: ease-in-out 200ms;
@@ -263,6 +263,9 @@ body {
         font-family:  "Inter", sans-serif;;
     }
     
+    .pedido {
+        margin-bottom: 312px;
+    }
     footer {
         padding: 5px;
         text-align: center;
