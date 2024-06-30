@@ -50,7 +50,7 @@ a {
 }
 
 body {
-    width: 100vw;
+    width: 100%;
     margin: 0;
 }
 
@@ -84,9 +84,8 @@ main {
 }
 
 .card {
-    width: 100%;
-    max-width: 409px;
-    height: auto;
+    width: 309px;
+    height: 399px;
     border-radius: 50px;
     background: #EFD8FE;
     display: inline-block;
@@ -94,9 +93,8 @@ main {
 }
 
 .card-img {
-    width: 100%;
-    max-width: 409px;
-    height: auto;
+    width: 309px;
+    height: 319px;
     border-radius: 50px;
     padding-top: 0px;
     transition: all 250ms;
@@ -180,7 +178,9 @@ main {
     }
     
     .sobre {
-        display: flex;
+        display: block;
+        justify-content: center;
+        text-align: center;
         gap: 56px;
         padding: 60px 50px;
         overflow: hidden;
@@ -189,13 +189,14 @@ main {
     }
     
     .sobre-texto {
-        float: left;
-        width: 100%;
-        max-width: 45%;
-        margin-right: 10%;
-        box-sizing: border-box;
+        font-size: 24px;
     }
-    
+    sobre-texto > p {
+        font-family: Inter;
+    }
+    .sobre-texto > h3 {
+        font-family: Judson;
+    }
     .titulo-quem-sou-eu {
         font-family: "Judson", serif;
         font-size: 4vw;
@@ -339,15 +340,63 @@ main {
     #mandala {
         cursor: pointer;
     }
+    .valores {  
+        background: #f3f3f3;  
+        padding: 20px;  
+        display: flex;  
+        justify-content: center;  
+        gap: 20px;  
+        margin-top: 40px;  
+    }  
+    .valor-title{
+        font-family: Judson;
+        font-size: 24px;
+    }
+    .valor-item {  
+        text-align: center;  
+        max-width: 200px; 
+        font-family: Inter; 
+    }  
     
-   
-    @media (max-width: 768px) {
+    .valor-img {  
+        width: 100%;  
+        border-radius: 50%;  
+    } 
+    
+    .valor-title { 
+        color: #333; 
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);  
+    } 
+
+    .ajuda{
+        font-family: Inter;
+        font-size: 17px;
+        text-align: center;
+        margin-left: 5px;
+        margin-right: 15px;
+    }
+    
+    @media (max-width: 768px) {  
+        .valores {  
+            flex-direction: column;  
+            align-items: center;  
+        }  
+        .img {
+            width: 100%;
+            height: 201px;
+            object-fit: cover;
+        }
+        .valor-item {  
+            max-width: 80%;  
+            margin-bottom: 20px;  
+        }  
+
         .mainTitle {
             font-size: 30px;
         }
     
         .link, .linkHere {
-            font-size: 16px;
+            font-size: 14px;
         }
     
         .produtos-escrito {
@@ -360,8 +409,8 @@ main {
         }
     
         .card {
-            width: 90%;
-            height: auto;
+            width: 309px;
+            height: 399px;
         }
     
         .quote {
