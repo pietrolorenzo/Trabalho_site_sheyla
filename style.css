@@ -125,7 +125,7 @@ body {
         display: flex;
         justify-content: center;
         margin: -30px 0 50px -50px;
-        scale: 1.2;
+
     }
     
     button:hover {
@@ -255,9 +255,8 @@ body {
     
     .legenda-footer {
         background-color: #EFD8FE;
-        padding: 1px;
-        display: flex;
-        justify-content: center;
+        padding: 5px;
+
     }
 
     .legenda-footer p {
@@ -265,24 +264,21 @@ body {
     }
     
     footer {
-        bottom: 0;
-        width: 100%;
-        background-color: #fff;
+        padding: 5px;
         text-align: center;
     }
     
     .footer-bar {
         background-color: #9867B899;
         color: #010B13;
-        padding: 5px 0; 
+        padding: 0 0; 
         margin: 0;
     }
     
     .footer-background {
         background-color: #EFD8FE;
-        padding: 27px 0; 
+        padding: 0; 
         margin: 0;
-        position: relative;
     }
 
     
