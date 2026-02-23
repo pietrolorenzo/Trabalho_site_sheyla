@@ -1,140 +1,225 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LuPhellipo Mandalas</title>
-    <link rel="icon" type="image/x-icon" href="img/favicon.png">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.0/dist/sweetalert2.min.css">
-    <style>
-        .swal2-popup {
-            font-family: 'Inter', sans-serif;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lu Phellipo — Mandalas artesanais únicas criadas com amor e precisão na Bahia. Arte que transforma ambientes e desperta consciência.">
+  <meta name="keywords" content="mandalas, arte artesanal, Luciana Phellipo, Bahia, decoração, mandala pintada">
+  <title>Lu Phellipo — Mandalas Artesanais</title>
+  <link rel="icon" type="image/x-icon" href="img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header class="mainTitle">
-        <h1> Lu Phellipo</h1>
-    </header>
 
-    <nav class="navBar">
-        <a class="linkHere" href="index.html">Home</a>
-        <a class="link" href="contate_nos.html">Contate-nos</a>
-        <a class="link" href="galeria.html">Galeria</a>
-        <a class="link" href="quem_somos.html">Quem somos</a>
-        <a class="link" href="ajuda.html">Ajuda</a>
+  <!-- NAV -->
+  <header class="site-header" id="site-header">
+    <nav class="nav-container">
+      <a href="index.html" class="nav-logo">Lu Phellipo</a>
+      <button class="nav-toggle" aria-label="Menu" id="nav-toggle">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="galeria.html" class="nav-link">Galeria</a></li>
+        <li><a href="quem_somos.html" class="nav-link">Sobre</a></li>
+        <li><a href="contate_nos.html" class="nav-link">Contato</a></li>
+        <li><a href="ajuda.html" class="nav-link">Ajuda</a></li>
+      </ul>
     </nav>
-    <main>
-        <div>
-            <img class="img" src="img/banner.jpg" alt="mandalas">
-        </div>
-        <div class="quote">
-            <p class="text">“A natureza inspira minha arte"</p>
-            <p class="credit">por Luciana Phellipo</p>
-        </div>
+  </header>
 
-        <div class="produtos">
-            <div class="produtos-escrito">
-                <p id='mandala' class="redirecionar" href='https://www.instagram.com/luphellipo/'>Mandalas <svg
-                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="redirecionar" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
-                    </svg></p>
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" aria-label="Apresentação">
+      <div class="hero-bg">
+        <img src="img/banner.jpg" alt="Mandala artesanal criada por Luciana Phellipo" class="hero-img" loading="eager">
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-content">
+        <p class="hero-eyebrow">Arte artesanal • Feito à mão • Bahia, Brasil</p>
+        <h1 class="hero-title">Arte que transforma<br><em>espaços e almas</em></h1>
+        <p class="hero-subtitle">Cada mandala é única. Criada com geometria sagrada, atenção meditativa e as melhores energias — para decorar, inspirar e despertar.</p>
+        <div class="hero-cta">
+          <a href="galeria.html" class="btn btn-primary">Ver coleção</a>
+          <a href="https://wa.me/message/XZSMPP7IUPNUP1" class="btn btn-ghost" target="_blank" rel="noopener">Encomendar agora</a>
+        </div>
+      </div>
+      <div class="hero-scroll-indicator" aria-hidden="true">
+        <span>Rolar</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- QUOTE STRIP -->
+    <section class="quote-strip" aria-label="Citação">
+      <div class="quote-inner">
+        <blockquote>
+          <p class="quote-text">"A natureza inspira minha arte"</p>
+          <cite>— Luciana Phellipo</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- FEATURED PRODUCTS -->
+    <section class="products-section" id="mandalas" aria-labelledby="products-heading">
+      <div class="section-container">
+        <header class="section-header">
+          <span class="section-tag">Coleção</span>
+          <h2 class="section-title" id="products-heading">Mandalas em destaque</h2>
+          <p class="section-subtitle">Cada peça é 100% artesanal e única — pintada à mão, nunca reproduzida.</p>
+        </header>
+        <div class="products-grid">
+          <article class="product-card">
+            <div class="product-img-wrap">
+              <img src="img/amarela_azul.png" alt="Mandala amarela e azul" class="product-img" loading="lazy">
+              <div class="product-overlay">
+                <a href="https://www.instagram.com/p/Ca250VmprqD/" class="product-link" target="_blank" rel="noopener">Ver no Instagram →</a>
+              </div>
             </div>
-        </div>
-
-        <article class="flex-home">
-            <figure class="card">
-                <img class="card-img" src="img/amarela_azul.png" alt="mandala amarela e azul">
-                <button class="text-card"><a class="redirecionar" href="https://www.instagram.com/p/Ca250VmprqD/">Saiba
-                        Mais</a></button>
-            </figure>
-            <figure class="card">
-                <img class="card-img" src="img/beija_flor.png" alt="mandala beija-flor">
-                <button class="text-card"><a class="redirecionar" href="https://www.instagram.com/p/CGX1HBKFJSJ/">Saiba
-                        Mais</a></button>
-            </figure>
-            <figure class="card">
-                <img class="card-img" src="img/dourada_azul.png" alt="mandala dourada e azul">
-                <button class="text-card"><a class="redirecionar" href="https://www.instagram.com/p/Cazt_noFSMe/">Saiba
-                        Mais</a></button>
-            </figure>
-        </article>
-
-        <div class="sobre">
-            <div class="sobre-texto">
-                <h2>Lu Phellipo</h2>
-                <p>Nasceu a partir de um profundo processo de autoconhecimento, em um momento de muitas mudanças na
-                    minha
-                    vida. Exercitando minha criatividade de uma forma até então pouco explorada, reencontrei-me com a
-                    minha
-                    criança interior e redescobri minha paixão pelo desenho!<br><br>
-
-                    As mandalas surgiram de maneira muito intuitiva e natural. E é dessa mesma forma que procuro criar
-                    minhas artes. Sigo meus instintos e vontades, depositando as melhores energias nas minhas criações,
-                    para
-                    que essa vibração positiva reverbere não só em mim, mas também em qualquer ambiente ou pessoa que
-                    tenha
-                    contato visual com elas.
-                </p>
-                <p><strong>- Lu Phellipo</strong></p>
+            <div class="product-info">
+              <h3 class="product-name">Mandala Solar</h3>
+              <p class="product-desc">Amarelo & Azul — energia e serenidade em equilíbrio</p>
             </div>
-            <div>
-                <img class="img-sobre" src="img/fases_lua.png" alt="mandala fases da lua">
+          </article>
+          <article class="product-card product-card--featured">
+            <div class="product-img-wrap">
+              <img src="img/beija_flor.png" alt="Mandala beija-flor" class="product-img" loading="lazy">
+              <div class="product-overlay">
+                <a href="https://www.instagram.com/p/CGX1HBKFJSJ/" class="product-link" target="_blank" rel="noopener">Ver no Instagram →</a>
+              </div>
             </div>
-<br>
+            <div class="product-info">
+              <h3 class="product-name">Mandala Beija-Flor</h3>
+              <p class="product-desc">A leveza da natureza capturada em cada detalhe</p>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-img-wrap">
+              <img src="img/dourada_azul.png" alt="Mandala dourada e azul" class="product-img" loading="lazy">
+              <div class="product-overlay">
+                <a href="https://www.instagram.com/p/Cazt_noFSMe/" class="product-link" target="_blank" rel="noopener">Ver no Instagram →</a>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Mandala Imperial</h3>
+              <p class="product-desc">Dourado & Azul — sofisticação e profundidade</p>
+            </div>
+          </article>
         </div>
-    </main>
-    <footer>
-        <div class="whatsapp">
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="redirecionar"
-                viewBox="0 0 16 16" id="wpp" href="https://wa.me/message/XZSMPP7IUPNUP1">
-                <path
-                    d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
-            </svg>
+        <div class="section-cta">
+          <a href="galeria.html" class="btn btn-outline">Ver toda a galeria</a>
         </div>
-        <div class="instagram">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="redirecionar"
-                viewBox="0 0 16 16" href="https://www.instagram.com/luphellipo/">
-                <a src="https://www.instagram.com/luphellipo/">.</a>
+      </div>
+    </section>
 
-                <path
-                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
-            </svg>
-        </div><br>
-        <div class="legenda-footer">
-            <h4>Por Luciana Phellipo - Artista Plástica </h4><br> <p><a class="redirecionar"
-                    href="https://www.flaticon.com/br/icones-gratis/mandala" title="mandala ícones">Favicon criado por
-                    Freepik - Flaticon</a></p>      
+    <!-- ABOUT / STORY -->
+    <section class="about-section" aria-labelledby="about-heading">
+      <div class="about-container">
+        <div class="about-img-col">
+          <img src="img/fases_lua.png" alt="Mandala Fases da Lua por Luciana Phellipo" class="about-img" loading="lazy">
+          <div class="about-img-accent" aria-hidden="true"></div>
         </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.0/dist/sweetalert2.all.min.js"></script>
-    <script>
-        document.querySelectorAll('.redirecionar').forEach(function (element) {
-            element.addEventListener('click', function (event) {
-                event.preventDefault();
-                const href = this.getAttribute('href');
+        <div class="about-text-col">
+          <span class="section-tag">A artista</span>
+          <h2 class="section-title" id="about-heading">Arte que nasce do autoconhecimento</h2>
+          <p>Em um momento de profundas mudanças, Luciana Phellipo reencontrou sua criança interior e redescobriu a paixão pelo desenho. As mandalas surgiram de forma intuitiva e natural — e é dessa mesma forma que cada peça é criada.</p>
+          <p>Cada obra deposita as melhores energias para que essa vibração positiva reverbere em qualquer ambiente ou pessoa que tenha contato visual com ela.</p>
+          <a href="quem_somos.html" class="btn btn-text">Conhecer a história completa →</a>
+        </div>
+      </div>
+    </section>
 
-                Swal.fire({
-                    title: 'Você deseja ser redirecionado para a página?',
-                    icon: 'warning',
-                    showCancelButton: true,
-                    confirmButtonText: 'Sim',
-                    cancelButtonText: 'Não',
-                    confirmButtonColor: "#008000",
-                    cancelButtonColor: "#d33",
-                }).then((result) => {
-                    if (result.isConfirmed) {
-                        window.location.href = href;
-                    }
-                });
-            });
-        });
-    </script>
+    <!-- VALUES -->
+    <section class="values-section" aria-labelledby="values-heading">
+      <div class="section-container">
+        <header class="section-header section-header--center">
+          <span class="section-tag">Propósito</span>
+          <h2 class="section-title" id="values-heading">Mais do que decoração</h2>
+        </header>
+        <div class="values-grid">
+          <div class="value-card">
+            <div class="value-number" aria-hidden="true">01</div>
+            <h3 class="value-title">Visão</h3>
+            <p>As mandalas são portais para o autoconhecimento — artes com propósito que auxiliam na transformação pessoal.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-number" aria-hidden="true">02</div>
+            <h3 class="value-title">Missão</h3>
+            <p>Criar conexão em toda a totalidade. Cada mandala traz arquétipos que provocam mudança interna — como Carl Jung defendia ao desenhar a sua diariamente.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-number" aria-hidden="true">03</div>
+            <h3 class="value-title">Valores</h3>
+            <p>Cada arte é única e 100% artesanal. Existe diferença entre valor e preço — priorizamos um resultado verdadeiramente satisfatório para cada cliente.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <section class="cta-section" aria-labelledby="cta-heading">
+      <div class="cta-inner">
+        <p class="cta-eyebrow">Pedidos personalizados · Atacado disponível</p>
+        <h2 class="cta-title" id="cta-heading">Pronto para transformar seu espaço?</h2>
+        <p class="cta-subtitle">Entre em contato pelo WhatsApp e crie sua mandala exclusiva.</p>
+        <a href="https://wa.me/message/XZSMPP7IUPNUP1" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Falar com Lu Phellipo</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <p class="footer-logo">Lu Phellipo</p>
+        <p class="footer-tagline">Arte artesanal feita com amor<br>na Bahia, Brasil.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Links do rodapé">
+        <a href="galeria.html">Galeria</a>
+        <a href="quem_somos.html">Sobre</a>
+        <a href="contate_nos.html">Contato</a>
+        <a href="ajuda.html">Ajuda</a>
+      </nav>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/luphellipo/" class="social-btn" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/></svg>
+          Instagram
+        </a>
+        <a href="https://wa.me/message/XZSMPP7IUPNUP1" class="social-btn social-btn--wpp" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg>
+          WhatsApp
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Luciana Phellipo — Artista Plástica. <a href="https://www.flaticon.com/br/icones-gratis/mandala" target="_blank" rel="noopener">Favicon por Freepik – Flaticon</a>.</p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating -->
+  <a href="https://wa.me/message/XZSMPP7IUPNUP1" class="wpp-float" target="_blank" rel="noopener" aria-label="Contato WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="white" viewBox="0 0 16 16"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg>
+  </a>
+
+  <script>
+    // Sticky header shadow on scroll
+    const header = document.getElementById('site-header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 20);
+    });
+
+    // Mobile nav toggle
+    const toggle = document.getElementById('nav-toggle');
+    const navLinks = document.getElementById('nav-links');
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      toggle.classList.toggle('open');
+    });
+  </script>
 </body>
-
 </html>

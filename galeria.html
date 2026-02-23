@@ -1,157 +1,229 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galeria</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.0/dist/sweetalert2.min.css">
-    <style>
-        .swal2-popup {
-            font-family: 'Inter', sans-serif;
-        }
-
-        .grid-produtos {
-            display: flex;
-            gap: 17px;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 73px;
-            flex-wrap: wrap;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Galeria de mandalas artesanais Lu Phellipo — peças únicas pintadas à mão na Bahia, Brasil.">
+  <title>Galeria — Lu Phellipo</title>
+  <link rel="icon" type="image/x-icon" href="img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header class="mainTitle">
-        <h1> Lu Phellipo</h1>
-    </header>
 
-    <nav class="navBar">
-        <a class="link" href="index.html">Home</a>
-        <a class="link" href="contate_nos.html">Contate-nos</a>
-        <a class="linkHere" href="galeria.html">Galeria</a>
-        <a class="link" href="quem_somos.html">Quem somos</a>
-        <a class="link" href="ajuda.html">Ajuda</a>
+  <header class="site-header scrolled" id="site-header">
+    <nav class="nav-container">
+      <a href="index.html" class="nav-logo" style="color: var(--ink);">Lu Phellipo</a>
+      <button class="nav-toggle" aria-label="Menu" id="nav-toggle"><span></span><span></span><span></span></button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="galeria.html" class="nav-link active">Galeria</a></li>
+        <li><a href="quem_somos.html" class="nav-link">Sobre</a></li>
+        <li><a href="contate_nos.html" class="nav-link">Contato</a></li>
+        <li><a href="ajuda.html" class="nav-link">Ajuda</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <main>
-        <div class="contatenos-img-container">
-            <img src="/img/SL.jpg" alt="foto-mandala">
-            <div class="text-overlay">Produtos</div>
-        </div>
-        <article class="grid-produtos">
-            <div>
-                <figure class="card">
-                    <img class="card-img" src="img/amarela_azul.png" alt="mandala amarela e azul">
-                    <button class="text-card"><a class="redirecionar"
-                            href='https://www.instagram.com/p/Ca250VmprqD/'>Saiba Mais</a></button>
-                </figure>
-                <figure class="card">
-                    <img class="card-img" src="img/beija_flor.png" alt="mandala beija-flor">
-                    <button class="text-card"><a class="redirecionar"
-                            href="https://www.instagram.com/p/CGX1HBKFJSJ/">Saiba Mais</a></button>
-                </figure>
-                <figure class="card">
-                    <img class="card-img" src="img/dourada_azul.png" alt="mandala dourada e azul">
-                    <button class="text-card"><a class="redirecionar"
-                            href="https://www.instagram.com/p/Cazt_noFSMe/">Saiba Mais</a></button>
-                </figure>
+  <main>
+    <div style="height: 72px;"></div>
+
+    <section class="page-hero">
+      <img src="img/SL.jpg" alt="" class="page-hero-img">
+      <div class="page-hero-content">
+        <h1 class="page-hero-title">Galeria</h1>
+      </div>
+    </section>
+
+    <section class="gallery-section">
+      <div class="section-container">
+        <header class="section-header">
+          <span class="section-tag">Coleção completa</span>
+          <h2 class="section-title">Cada peça, uma história</h2>
+          <p class="section-subtitle">Todas as obras são 100% artesanais, pintadas à mão e nunca reproduzidas.</p>
+        </header>
+
+        <div class="gallery-grid">
+          <article class="product-card reveal">
+            <div class="product-img-wrap">
+              <img src="img/amarela_azul.png" alt="Mandala amarela e azul" class="product-img" loading="lazy">
+              <div class="product-overlay">
+                <a href="https://www.instagram.com/p/Ca250VmprqD/" class="product-link" target="_blank" rel="noopener">Ver no Instagram →</a>
+              </div>
             </div>
-
-            <div>
-                <figure class="card">
-                    <img class="card-img" src="img/duas_juntas.png" alt="mandala dourada e azul">
-                    <button class="text-card"><a class="redirecionar"
-                            href="https://www.instagram.com/p/Ca2KdyglAEW/">Saiba Mais</a></button>
-                </figure>
-                <figure class="card">
-                    <img class="card-img" src="img/espelho.jpg" alt="mandala dourada e azul">
-                    <button class="text-card"><a class="redirecionar"
-                            href="https://www.instagram.com/p/Cb77eKAr0fu/?img_index=1">Saiba Mais</a></button>
-                </figure>
-                <figure class="card">
-                    <img class="card-img" src="img/mandala dourada e azul, com espelho no meio.png"
-                        alt="mandala dourada e azul">
-                    <button class="text-card"><a class="redirecionar"
-                            href="https://www.instagram.com/p/CoTMZPmLFUu/">Saiba Mais</a></button>
-                </figure>
+            <div class="product-info">
+              <h3 class="product-name">Mandala Solar</h3>
+              <p class="product-desc">Amarelo & Azul</p>
             </div>
+          </article>
 
-            <div>
-                <figure class="card">
-                    <img class="card-img" src="img/mandala roxa e verde.png" alt="mandala dourada e azul">
-                    <button class="text-card"><a class="redirecionar"
-                            href="https://www.instagram.com/p/Cgc0MAwJBLn/">Saiba Mais</a></button>
-                </figure>
-                <figure class="card">
-                    <img class="card-img" src="img/roxa_verde_espiral.png" alt="mandala dourada e azul">
-                    <button class="text-card"><a class="redirecionar"
-                            href="https://www.instagram.com/p/Cb_FHG6pl9-/">Saiba Mais</a></button>
-                </figure>
-                <figure class="card">
-                    <img class="card-img" src="img/verde_arvore.png" alt="mandala dourada e azul">
-                    <button class="text-card"><a class="redirecionar"
-                            href="https://www.instagram.com/p/CfCPmlrFPj7/">Saiba Mais</a></button>
-                </figure>
+          <article class="product-card reveal">
+            <div class="product-img-wrap">
+              <img src="img/beija_flor.png" alt="Mandala beija-flor" class="product-img" loading="lazy">
+              <div class="product-overlay">
+                <a href="https://www.instagram.com/p/CGX1HBKFJSJ/" class="product-link" target="_blank" rel="noopener">Ver no Instagram →</a>
+              </div>
             </div>
-        </article>
-        <p class="mainTitle">Quer ver mais mandalas?</p>
-        <div class="botao">
-            <button class="redirecionar">Clique aqui</button>
+            <div class="product-info">
+              <h3 class="product-name">Mandala Beija-Flor</h3>
+              <p class="product-desc">Natureza em movimento</p>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <div class="product-img-wrap">
+              <img src="img/dourada_azul.png" alt="Mandala dourada e azul" class="product-img" loading="lazy">
+              <div class="product-overlay">
+                <a href="https://www.instagram.com/p/Cazt_noFSMe/" class="product-link" target="_blank" rel="noopener">Ver no Instagram →</a>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Mandala Imperial</h3>
+              <p class="product-desc">Dourado & Azul</p>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <div class="product-img-wrap">
+              <img src="img/duas_juntas.png" alt="Duas mandalas juntas" class="product-img" loading="lazy">
+              <div class="product-overlay">
+                <a href="https://www.instagram.com/p/Ca2KdyglAEW/" class="product-link" target="_blank" rel="noopener">Ver no Instagram →</a>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Díptico Harmonioso</h3>
+              <p class="product-desc">Par de mandalas</p>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <div class="product-img-wrap">
+              <img src="img/espelho.jpg" alt="Mandala com espelho" class="product-img" loading="lazy">
+              <div class="product-overlay">
+                <a href="https://www.instagram.com/p/Cb77eKAr0fu/?img_index=1" class="product-link" target="_blank" rel="noopener">Ver no Instagram →</a>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Mandala Espelho</h3>
+              <p class="product-desc">Reflexo e profundidade</p>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <div class="product-img-wrap">
+              <img src="img/mandala dourada e azul, com espelho no meio.png" alt="Mandala dourada e azul com espelho" class="product-img" loading="lazy">
+              <div class="product-overlay">
+                <a href="https://www.instagram.com/p/CoTMZPmLFUu/" class="product-link" target="_blank" rel="noopener">Ver no Instagram →</a>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Imperial com Espelho</h3>
+              <p class="product-desc">Dourado, Azul & espelho central</p>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <div class="product-img-wrap">
+              <img src="img/mandala roxa e verde.png" alt="Mandala roxa e verde" class="product-img" loading="lazy">
+              <div class="product-overlay">
+                <a href="https://www.instagram.com/p/Cgc0MAwJBLn/" class="product-link" target="_blank" rel="noopener">Ver no Instagram →</a>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Mandala Floresta</h3>
+              <p class="product-desc">Roxo & Verde</p>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <div class="product-img-wrap">
+              <img src="img/roxa_verde_espiral.png" alt="Mandala roxa e verde espiral" class="product-img" loading="lazy">
+              <div class="product-overlay">
+                <a href="https://www.instagram.com/p/Cb_FHG6pl9-/" class="product-link" target="_blank" rel="noopener">Ver no Instagram →</a>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Espiral Cósmica</h3>
+              <p class="product-desc">Roxo & Verde em espiral</p>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <div class="product-img-wrap">
+              <img src="img/verde_arvore.png" alt="Mandala verde árvore" class="product-img" loading="lazy">
+              <div class="product-overlay">
+                <a href="https://www.instagram.com/p/CfCPmlrFPj7/" class="product-link" target="_blank" rel="noopener">Ver no Instagram →</a>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Árvore da Vida</h3>
+              <p class="product-desc">Verde & natureza</p>
+            </div>
+          </article>
         </div>
-    </main>
 
-    <br>
-    <footer>
-        <div class="whatsapp">
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="redirecionar"
-                viewBox="0 0 16 16" id="wpp" href="https://wa.me/message/XZSMPP7IUPNUP1">
-                <path
-                    d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
-            </svg>
+        <div class="section-cta" style="margin-top: 4rem;">
+          <div style="text-align:center;">
+            <p style="margin-bottom: 1.5rem; text-align:center;">Quer ver mais? Siga no Instagram.</p>
+            <a href="https://www.instagram.com/luphellipo/" class="btn btn-outline" target="_blank" rel="noopener">@luphellipo no Instagram</a>
+          </div>
         </div>
-        <div class="instagram">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="redirecionar"
-                viewBox="0 0 16 16" href="https://www.instagram.com/luphellipo/">
-                <a src="https://www.instagram.com/luphellipo/"></a>
+      </div>
+    </section>
+  </main>
 
-                <path
-                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
-            </svg>
-        </div><br>
-        <div class="legenda-footer">
-            <h4>Por Luciana Phellipo - Artista Plástica </h4>
-            <br>
-            <p><a class="redirecionar" href="https://www.flaticon.com/br/icones-gratis/mandala"
-                    title="mandala ícones">Favicon criado por Freepik - Flaticon</a></p>
-        </div>
-    </footer>
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <p class="footer-logo">Lu Phellipo</p>
+        <p class="footer-tagline">Arte artesanal feita com amor<br>na Bahia, Brasil.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Links do rodapé">
+        <a href="galeria.html">Galeria</a>
+        <a href="quem_somos.html">Sobre</a>
+        <a href="contate_nos.html">Contato</a>
+        <a href="ajuda.html">Ajuda</a>
+      </nav>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/luphellipo/" class="social-btn" target="_blank" rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/></svg>
+          Instagram
+        </a>
+        <a href="https://wa.me/message/XZSMPP7IUPNUP1" class="social-btn" target="_blank" rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg>
+          WhatsApp
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Luciana Phellipo — Artista Plástica. <a href="https://www.flaticon.com/br/icones-gratis/mandala" target="_blank" rel="noopener">Favicon por Freepik – Flaticon</a>.</p>
+    </div>
+  </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.0/dist/sweetalert2.all.min.js"></script>
-    <script>
-        document.querySelectorAll('.redirecionar').forEach(function (element) {
-            element.addEventListener('click', function (event) {
-                event.preventDefault();
-                const href = this.getAttribute('href');
+  <a href="https://wa.me/message/XZSMPP7IUPNUP1" class="wpp-float" target="_blank" rel="noopener" aria-label="Contato WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="white" viewBox="0 0 16 16"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg>
+  </a>
 
-                Swal.fire({
-                    title: 'Você deseja ser redirecionado para a página?',
-                    icon: 'warning',
-                    showCancelButton: true,
-                    confirmButtonText: 'Sim',
-                    cancelButtonText: 'Não',
-                    confirmButtonColor: "#008000",
-                    cancelButtonColor: "#d33",
-                }).then((result) => {
-                    if (result.isConfirmed) {
-                        window.location.href = href;
-                    }
-                });
-            });
-        });
-    </script>
+  <script>
+    const header = document.getElementById('site-header');
+    window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 20));
+    document.getElementById('nav-toggle').addEventListener('click', function() {
+      document.getElementById('nav-links').classList.toggle('open');
+      this.classList.toggle('open');
+    });
+
+    // Intersection Observer for reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          entry.target.style.transitionDelay = (i % 3) * 80 + 'ms';
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
 </body>
-
 </html>
